@@ -1,0 +1,64 @@
+.title{
+    border-bottom: 2px solid;
+}
+
+.subtitle{
+    margin: 20px;
+}
+
+.get{
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+img{
+    margin: auto;
+    margin-bottom: 20px;
+    display:block;
+    max-width:300px;
+    border-radius: 20px;
+}
+
+.instructions{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.row{
+    padding-top: 20px;
+}
+
+.api-url{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width:800px;
+    margin: auto;
+}
+
+.subcontainer{
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.quote{
+    display:block;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.faq{
+    display:block;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.faq p{
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}

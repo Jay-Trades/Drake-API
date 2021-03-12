@@ -17,7 +17,7 @@ app.get('/', function(req, res){
 
 
 app.get('/api', function(req, res){
-    let id = Math.floor(Math.random() * 28)
+    let id = Math.floor(Math.random() * 27) + 1
 
     let db = new sqlite3.Database(__dirname + '/drakeQ.db', sqlite3.OPEN_READONLY, (err) => {
         if (err) {
@@ -37,10 +37,12 @@ app.get('/api', function(req, res){
             return console.error(err.message);
           }
         if (row){
-              res.write(row.quote);
-              res.write("-" + row.name);
-              res.send()
+            // res.write(row.quote);
+            // res.write("-" + row.name);
+            res.json({quote: row.quote, author: row.name})
+
           }else{
+
             res.send(`No playlist found with the id ${id}`);
           };
     });
@@ -58,6 +60,7 @@ app.get('/api', function(req, res){
     //     });
     // });
 });
+
 
 app.listen(3000, function() {
     console.log('server up');

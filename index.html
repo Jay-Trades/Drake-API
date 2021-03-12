@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Drizzy</title>
@@ -11,7 +12,12 @@
 
 <body>
     <div class="container">
-        <h1 class='title'>Drizzy Drake API</h1>
+        <div class='title'>
+            <img class='title1' src="drake2.png" alt="error">
+            <h1 class='title1'>Drizzy Drake API</h1>
+        </div>
+        <hr>
+
         <p class='description'>Iconic Drake quotes and lyrics delivered to you at random!</p>
         <p>WARNING!!! some quotes are rated R. Use at your own risk</p>
         
@@ -19,34 +25,43 @@
         <div class="subcontainer">
             <div class="row">
                 <div class="col-12 col-sm-8">
-                    <p class='get'>GET</p>
-                    <a class="api-url" href="">https://drizzy.com/api</a>
+                    <p class='getText'>GET</p>
+                    <a class="api-url" href="/api">https://drizzy.com/api</a>
                 </div>
                 <div class="col-6 col-sm-2">
+                    <i class="fa fa-refresh fa-spin clickable" id='refresh' style="font-size:24px"></i>
                     <p class='instructions'>Drizzy</p>
                 </div>
                 <div class="col-6 col-sm-2">
+                    <a href="/api"><i class="fa fa-share-alt clickable" style="font-size:24px"></i>
+                    </i></a>
                     <p class='instructions'>Share</p>
                 </div>
             </div>
             <div class="quote">
-                <p>Drake Says:</p>
-                <p><b>"The girl that I want to save is like a danger to my health. Try being with somebody that want to be somebody else"</b></p>
+                <p>Drake:</p>
+                <p id='drakeQuote'><b>"The girl that I want to save is like a danger to my health. Try being with somebody that want to be somebody else"</b></p>
             </div>
-            <img src="https://www.rollingstone.com/wp-content/uploads/2019/08/drake-review.jpg?resize=1800,1200&w=1200" alt="picture of Drake">
+            <img id='drake-pic' src="https://www.rollingstone.com/wp-content/uploads/2019/08/drake-review.jpg?resize=1800,1200&w=1200" alt="picture of Drake">
         </div>
 
         <h2 class='subtitle'>FAQs</h2>
         <div class='subcontainer'>
             <div class="faq">
+                <h3>What is this?</h3>
+                <p>This is a fun project for me to practice building a simple API!</p>
+
                 <h3>What is the rate limit?</h3>
                 <p>There is none :)</p>
 
                 <h3>Can I contribute?</h3>
-                <p>You are welcomed to make changes or add quotes! <a href="https://www.github.com/jay-trades">Code Repo Here</a></p>
+                <p>You are welcomed to make changes or add quotes! <a href="https://github.com/Jay-Trades/Drake-API">Code Repo Here</a></p>
+
             </div>
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

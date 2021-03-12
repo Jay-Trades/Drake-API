@@ -1,19 +1,33 @@
 .title{
-    border-bottom: 2px solid;
+    margin-top: 30px;
+
+}
+
+.title1{
+    display: inline-block;
+    align-items: center;
+}
+
+
+hr{
+    height: 1px;
+    color: black;
+    background-color:black;
 }
 
 .subtitle{
     margin: 20px;
 }
 
-.get{
+.getText{
     display: inline-block;
     font-size: 1.5rem;
     padding-left: 20px;
     padding-right: 10px;
+    font-weight: bold;
 }
 
-img{
+#drake-pic{
     margin: auto;
     margin-bottom: 20px;
     display:block;
@@ -23,7 +37,9 @@ img{
 
 .instructions{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .row{
@@ -32,6 +48,13 @@ img{
 
 .api-url{
     text-align: left;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: black;
+}
+
+.clickable{
+    margin-top:10px;
     font-size: 1.5rem;
 }
 
@@ -55,10 +78,9 @@ img{
 .faq{
     display:block;
     padding: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .faq p{
-    font-size: 1.2rem;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }

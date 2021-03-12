@@ -1,6 +1,11 @@
 .title{
     margin-top: 30px;
+    display: inline-block;
+    font-family: 'DotGothic16', sans-serif;
+}
 
+.drake-icon{ 
+    border-radius:20px;
 }
 
 .title1{
@@ -9,14 +14,33 @@
 }
 
 
+p{ 
+    font-family: 'Gilda Display', serif;
+    color: black;
+}
+
 hr{
     height: 1px;
     color: black;
     background-color:black;
 }
 
+.description{
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Gilda Display', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.warning{
+    text-align: center;
+}
+
 .subtitle{
     margin: 20px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .getText{
@@ -24,7 +48,8 @@ hr{
     font-size: 1.5rem;
     padding-left: 20px;
     padding-right: 10px;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 #drake-pic{
@@ -58,6 +83,8 @@ hr{
     font-size: 1.5rem;
 }
 
+
+
 .container{
     max-width:800px;
     margin: auto;
@@ -67,12 +94,16 @@ hr{
     border: 1px solid;
     border-radius: 10px;
     margin: 20px;
+    margin-bottom: 70px;
 }
 
 .quote{
     display:block;
     padding: 30px;
     font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
 }
 
 .faq{
@@ -83,4 +114,14 @@ hr{
 
 .faq p{
     padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 580px) {
+    .clickable{
+        margin-left: 20px;
+    }    
+
+    .api-url{ 
+        margin-left: 20px;
+    }
 }

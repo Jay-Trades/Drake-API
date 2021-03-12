@@ -16,7 +16,7 @@ async function getapi(url) {
     console.log(typeof data.quote);
     console.log(data.quote);
     const drakeQuote = document.getElementById('drakeQuote');
-    drakeQuote.innerHTML = '<b>' + data.quote + '</b>';
+    drakeQuote.innerHTML = '\"' + data.quote + '\"';
     //not sure why but i can't sent data.quote to a variable 
     //or it will say [obj promise]
 } 

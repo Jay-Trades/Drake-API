@@ -49,16 +49,7 @@ app.get('/api', function(req, res){
 
 
     db.close();
-
-
-    // https.get('https://api.kanye.rest', function(response){
-    //     console.log(response.statusCode);
-    //     response.on('data', function(data){
-    //         const kanye = JSON.parse(data);
-    //         console.log(kanye)
-    //         res.send(kanye);
-    //     });
-    // });
+    //things to fix how to keep a stream open and only close out when th eapp is closed.
 });
 
 
